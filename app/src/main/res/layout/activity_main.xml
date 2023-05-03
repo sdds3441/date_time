@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/day_text"
+        android:textSize="30sp"
+        android:layout_above="@id/time_text"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time_text"
+        android:textSize="30sp"
+        android:layout_above="@id/timePicker"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timePicker"
+        android:timePickerMode="spinner"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_sel"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="10dp"
+        android:text="날짜 선택" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/timePicker"
+        android:id="@+id/fragment_date"/>
+
+</RelativeLayout>
+
+
